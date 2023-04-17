@@ -1,0 +1,69 @@
+{
+	"Public method": {
+		"prefix": "met",
+		"body": [
+			"public function $1()",
+			"{",
+			"\t$2",
+			"}"
+		],
+		"description": "New public method"
+	},
+	"Protected Method": {
+		"prefix": "pmet",
+		"body": [
+			"protected function $1()",
+			"{",
+			" \t$2",
+			"}"
+		],
+		"description": "New Protected Method"
+	},
+	"Private Method": {
+		"prefix": "pvmeth",
+		"body": [
+			"private function $1()",
+			"{",
+			"\t$2",
+			"}"
+		],
+		"description": "New Private Method"
+	},
+	"Class": {
+		"prefix": "class",
+		"body": [
+			"class ${TM_FILENAME_BASE}",
+			"{",
+			"    $2",
+			"}"
+		],
+		"description": "New Class"
+	},
+	"Create constructor": {
+		"prefix": "construct",
+		"body": [
+			"public function __construct()",
+			"{",
+			"	$2",
+			"}"
+		],
+		"description": "New Constructor"
+	},
+	"Test notation": {
+		"prefix": "test",
+		"body": [
+			"/** @test */",
+			"public function $1()",
+			"{",
+			"    $3",
+			"}"
+		],
+		"description": "Create a test notation"
+	},
+	"Tinker": {
+		"prefix": "tinker",
+		"body": [
+			"eval(\\Psy\\sh());"
+		]
+	}
+}

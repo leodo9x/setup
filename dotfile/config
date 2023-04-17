@@ -1,0 +1,9 @@
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile  ~/.ssh/id_me
+
+Host github-{your-company}
+    HostName github.com
+    User git
+    IdentityFile  ~/.ssh/id_{your-company}

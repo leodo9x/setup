@@ -1,0 +1,158 @@
+{
+  /**
+   * Better Defaults
+   **/
+  "editor.copyWithSyntaxHighlighting": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.emptySelectionClipboard": false,
+  "window.newWindowDimensions": "inherit",
+  "editor.multiCursorModifier": "alt",
+  "files.trimTrailingWhitespace": true,
+  "diffEditor.renderSideBySide": false,
+  "editor.snippetSuggestions": "top",
+  "editor.detectIndentation": false,
+  "window.nativeFullScreen": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "editor.formatOnPaste": true,
+  "window.openFilesInNewWindow": "on",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "files.autoSave": "onFocusChange",
+  "files.hotExit": "onExitAndWindowClose",
+  "extensions.ignoreRecommendations": true,
+  "editor.largeFileOptimizations": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": false,
+  "scm.diffDecorations": "none",
+  "editor.hover.enabled": false,
+  "editor.matchBrackets": "never",
+  "workbench.tips.enabled": false,
+  "editor.colorDecorators": false,
+  "git.decorations.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.lightbulb.enabled": false,
+  "editor.selectionHighlight": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderLineHighlight": "none",
+  "editor.occurrencesHighlight": false,
+  "problems.decorations.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "workbench.sideBar.location": "left",
+  "workbench.fontAliasing": "antialiased",
+  "editor.renderWhitespace": "all",
+  /**
+   * Typography
+   **/
+  "editor.fontSize": 15,
+  "editor.lineHeight": 28,
+  "editor.suggestFontSize": 15,
+  "editor.suggestLineHeight": 28,
+  "editor.letterSpacing": 0,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  /**
+   * Theme
+   **/
+"workbench.iconTheme": "material-icon-theme",
+  /**
+   * Searching
+   **/
+  "search.useIgnoreFiles": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    // Hide everything in /public, except "index.php"
+    "**/public/[abcdefghjklmnopqrstuvwxyz]*": true,
+    "**/public/i[abcdefghijklmopqrstuvwxyz]*": true,
+    // Hide everything in /vendor, except "laravel" folder.
+    "**/vendor/{[^l],?[^a]}*": true,
+    // Hide everything in /public, except "index.php"
+    "**/public/{[^i],?[^n]}*": true,
+    "**/dist": true,
+    "**/composer.lock": true,
+    "**/package-lock.json": true,
+    "storage": true,
+    ".phpunit.result.cache": true
+  },
+  /**
+   * Terminal
+   **/
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.cursorBlinking": false,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.external.osxExec": "Warp.app",
+  /**
+   * Prettier
+   **/
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": false
+  },
+  /**
+   * PHP Intelephense
+   **/
+  "php.suggest.basic": false,
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer",
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "files.associations": {
+    ".php_cs": "php",
+    ".php_cs.dist": "php",
+    "*.php": "php" // this is super important, otherwise intelephense will not auto-index your project.
+  },
+  "emmet.includeLanguages": {
+    "blade.php": "html",
+    "vue": "html"
+},
+  "bracketPairColorizer.depreciation-notice": false,
+  "workbench.preferredDarkColorTheme": "Cobalt2",
+  "workbench.editorAssociations": {
+    "*.html": "default"
+  },
+//   "workbench.preferredLightColorTheme": "Cobalt2-Light",
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.statusBar.visible": false,
+  "workbench.editor.showTabs": false,
+  "workbench.colorTheme": "Cobalt2",
+  "window.autoDetectColorScheme": true,
+    /**
+    * Gitlens
+    **/
+    "gitlens.views.repositories.files.layout": "list",
+    "gitlens.views.repositories.showCommits": false,
+    "gitlens.views.repositories.avatars": false,
+    "gitlens.views.commits.showBranchComparison": false,
+    "gitlens.views.commits.pullRequests.showForBranches": false,
+    "gitlens.views.commits.pullRequests.enabled": false,
+    "gitlens.views.showRelativeDateMarkers": false,
+    "gitlens.views.commits.files.layout": "list",
+    "gitlens.views.searchAndCompare.files.layout": "list"
+
+    /**
+    * PHP Intelephense
+    **/
+    "intelephense.diagnostics.undefinedVariables": false,
+    "intelephense.diagnostics.undefinedTypes": false,
+    "intelephense.diagnostics.undefinedFunctions": false,
+    "intelephense.diagnostics.undefinedConstants": false,
+    "intelephense.diagnostics.undefinedClassConstants": false,
+    "intelephense.diagnostics.undefinedMethods": false,
+    "intelephense.diagnostics.undefinedProperties": false
+}
