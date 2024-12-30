@@ -29,7 +29,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 fancy_echo "Installing development apps"
 fancy_echo "--------------------------"
 
-gui=("docker" "herd" "tableplus" "visual-studio-code" "font-fira-code" "slack" "warp" "postman")
+gui=("docker" "tableplus" "cursor" "font-fira-code" "slack" "warp" "postman")
 for gui in ${gui[*]}; do
     if ! brew list $gui; then
         fancy_echo "Installing $gui"
