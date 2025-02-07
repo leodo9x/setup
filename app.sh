@@ -20,7 +20,7 @@ fi
 fancy_echo "Installing essential apps"
 fancy_echo "-------------------------"
 
-gui=("evkey" "brave-browser" "the-unarchiver" "raycast" "obsidian" "megasync" "vlc")
+gui=("evkey" "brave-browser" "the-unarchiver" "raycast" "obsidian" "megasync" "vlc" "cold-turkey-blocker")
 for gui in ${gui[*]}; do
     if ! brew list $gui; then
         fancy_echo "Installing $gui"
