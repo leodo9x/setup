@@ -19,7 +19,7 @@ done
 fancy_echo "Installing development cli"
 fancy_echo "--------------------------"
 
-cli=("git" "node" "yarn" "pnpm" "composer")
+cli=("git" "node" "pnpm")
 for cli in ${cli[*]}; do
     if ! brew list $cli; then
         fancy_echo "Installing $cli"
