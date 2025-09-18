@@ -17,12 +17,16 @@ cp "./dotfile/.gitconfig-personal" "$HOME"
 fancy_echo "Config warp themes"
 fancy_echo "--------------------------"
 
+if [ ! -d "$HOME/.warp" ]; then
+   mkdir "$HOME/.warp"
+fi
+
 if [ ! -d "$HOME/.warp/themes" ]; then
    mkdir "$HOME/.warp/themes"
 fi
 
-cp "./warp-themes/cobalt2-light.yaml" "$HOME/.warp/themes"
-cp "./warp-themes/cobalt2.yaml" "$HOME/.warp/themes"
+cp "./warp/cobalt2-light.yaml" "$HOME/.warp/themes"
+cp "./warp/cobalt2.yaml" "$HOME/.warp/themes"
 
 fancy_echo "Config cursor settings"
 fancy_echo "--------------------------"
